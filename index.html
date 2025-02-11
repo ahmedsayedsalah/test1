@@ -1,0 +1,601 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ROVEN</title>
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+    <link rel="stylesheet" href="master.css">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body style="background-color: #68BBE3;">
+    <header>
+        <nav class="navbar">
+            <span class="brand">ROVEN</span>
+            <div class="account"><li><a class="log" href="Login.html" target="_blank">account</a><i class="fa-solid fa-user"></i></li></div>
+            <div class="toggle_btn">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+            <form class="d-flex" role="search">
+                <div class="dropdown">
+                    <button class="btn btn-secondary dropdown-toggle" id="categoryDropdown" type="button" data-toggle="dropdown" aria-expanded="false" style="background-color: #055C9D;">
+                    </button>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">Mobile & Tablet</a></li>
+                        <li><a class="dropdown-item" href="#">TV</a></li>
+                        <li><a class="dropdown-item" href="#">Small appliances</a></li>
+                        <li><a class="dropdown-item" href="#">Large devices</a></li>
+                        <li><a class="dropdown-item" href="#">Kitchen appliances</a></li>
+                        <li><a class="dropdown-item" href="#">Health & Beauty</a></li>
+                        <li><a class="dropdown-item" href="#">Home Supplies</a></li>
+                        <li><a class="dropdown-item" href="#">Supermarket</a></li>
+                    </ul>
+                </div>
+                <input class="form-control me-2" type="search" placeholder="Find the product" aria-label="Search">
+                <button class="btn"><i class="fa-solid fa-magnifying-glass"></i></button>
+            </form>
+            <ul class="links">
+                <li><a class="car" href="Cart.html" target="_blank">Cart</a><i class="fa-solid fa-cart-shopping"></i></li>
+                <li><a class="car" href="#" target="_blank">The favorite</a><i class="fa-solid fa-heart"></i></li>
+            </ul>
+            <div class="dropdown-btn dropdown_menu">
+                <li><a class="log" href="Login.html" target="_blank">account</a><i class="fa-solid fa-user"></i></li>
+                <li><a class="car" href="Cart.html" target="_blank">Cart</a><i class="fa-solid fa-cart-shopping"></i></li>
+                <li><a class="car" href="#" target="_blank">The favorite</a><i class="fa-solid fa-heart"></i></li>
+            </div>
+            </div>
+        </nav>
+    </header>
+
+    <div class="images_small">
+        <img src="images/1-13.jpg" alt="">
+        <img src="images/img4.jpg" alt="">
+        <img src="images/img2.jpg" alt="">
+        <img src="images/img3.png" alt="">
+      </div>
+      
+
+      <div class="images">
+        <div class="images_1">
+            <span class="img3"><img src="images/1-13.jpg" alt="" class="img-fluid" style="border-radius: 20px;"></span>
+            <span class="img4"><img src="images/img4.jpg" alt="" class="img-fluid" style="border-radius: 20px; width: 350px ;height: 300px;"></span>
+        </div>
+
+        <div class="images_2">
+            <span class="img1"><img src="images/img1.jpg" alt="" class="img-fluid" style="border-radius: 20px;"></span>
+            <div id="slide" class="carousel slide container" data-ride="carousel" data-pause="hover" data-interval="2000" style="padding-top: 50px;">
+                <ol class="carousel-indicators">
+                    <li data-target="#slide" data-slide-to="0" class="active"></li>
+                    <li data-target="#slide" data-slide-to="1"></li>
+                    <li data-target="#slide" data-slide-to="2"></li>
+                </ol>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="images/slide1.jpg" alt="Image 1" class="w-100" style="border-radius: 20px;">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="images/side2.jpg" alt="Image 2" class="w-100" style="border-radius: 20px;">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="images/slide3.jpg" alt="Image 3" class="w-100" style="border-radius: 20px;">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="images_3">
+            <span class="img2"><img src="images/img2.jpg" alt="" class="img-fluid" style="border-radius: 20px;width: 350px"></span>
+            <span class="img6"><img src="images/img3.png" alt="" class="img-fluid" style="border-radius: 20px;"></span>
+        </div>
+    </div>
+     
+ <div class="categories-container" >
+    <div class="category ">
+      <a href="#"> <img src="images/FRYERS.png" alt=""></a>
+      <a href="#">Kitchen appliances</a>
+    </div>
+  <div class="category aa">
+    <a href="#"> <img src="images/market.jpg" alt=""></a>
+    <a href="#">Super market</a>
+  </div>
+  <div class="category">
+    <a href="#"> <img src="images/GAMING.png" alt=""></a>
+    <a href="#">Electronics</a>
+  </div>
+  <div class="category">
+    <a href="#"> <img src="images/HEATERS.png" alt=""></a>
+    <a href="#">Small appliances</a>
+  </div>
+  <div class="category">
+    <a href="#"> <img src="images/Laptop.png" alt=""></a>
+    <a href="#">PC</a>
+  </div>
+  <div class="category ">
+    <a href="#"> <img src="images/Mobiles.png" alt=""></a>
+    <a href="#">Mobile & Tablet</a>
+  </div>
+  <div class="category ">
+    <a href="#"> <img src="images/SHAVERS.png" alt=""></a>
+    <a href="#">Health & Beauty</a>
+  </div>
+  <div class="category ">
+  <a href="#"> <img src="images/Wm.png" alt=""></a>
+  <a href="#">Large devices</a>
+  </div>
+  <div class="category ">
+  <a href="#"> <img src="images/Tv.png" alt=""></a>
+  <a href="#">TV</a>
+  </div>
+  <div class="category special">
+    <a href="#"> <img src="images/offer.jpg" alt=""></a>
+    <a href="#" >Offers</a>
+    </div>
+ </div>
+ 
+
+ <p class="offers">Our Top Offers</p>
+  <section class="offers_prodacts" >
+
+    <div class="card_prodact">
+        <span class="discount">Discount 17%</span>
+        <i class="heart fas fa-heart" onclick="toggleHeart(this)"></i>
+        <img src="images/prodact1.webp">
+        <div class="title">Philips Essential XL Digital Air Fryer, 6.2 Liters, 2000 Watts, Black - HD9280/91</div>
+        <div class="price-container">
+            <div class="old-price"><span class="oldPrice">5799</span> L.E</div>
+            <div class="new-price"><span class="newPrice"></span> L.E</div>
+        </div>
+        <div class="rating">
+            <i class="star fas fa-star" data-value="1" ></i>
+            <i class="star fas fa-star" data-value="2" ></i>
+            <i class="star fas fa-star" data-value="3" ></i>
+            <i class="star fas fa-star" data-value="4" ></i>
+            <i class="star fas fa-star-half-alt" data-value="5" ></i>
+        </div>
+        <button class="add-to-cart" onclick="addToCart(this)" data-image="images/prodact1.webp">إضافة إلى العربة</button>
+    </div>
+    <div class="card_prodact">
+        <span class="discount">Discount 7%</span>
+        <i class="heart fas fa-heart" onclick="toggleHeart(this)"></i>
+        <img src="images/prodact2.webp" >
+        <div class="title">Samsung Galaxy A16, Dual SIM, 256GB storage, 8GB RAM, 4G network</div>
+        <div class="price-container">
+            <div class="old-price"><span class="oldPrice">9499</span> L.E</div>
+            <div class="new-price"><span class="newPrice"></span> L.E</div>
+        </div>
+        <div class="rating">
+            <i class="star fas fa-star" data-value="1" ></i>
+            <i class="star fas fa-star" data-value="2" ></i>
+            <i class="star fas fa-star" data-value="3" ></i>
+            <i class="star fas fa-star" data-value="4" ></i>
+        </div>
+        <button class="add-to-cart" onclick="addToCart(this)"  data-image="images/prodact2.webp" >Add to Cart</button>
+    </div>
+
+    <div class="card_prodact">
+        <span class="discount">Discount 10%</span>
+        <i class="heart fas fa-heart" onclick="toggleHeart(this)"></i>
+        <img src="images/prodact3.webp" >
+        <div class="title">Oraimo Tempo W2 Smartwatch, 1.28-inch display, Black - OSW-20</div>
+        <div class="price-container">
+            <div class="old-price"><span class="oldPrice">950</span> L.E</div>
+            <div class="new-price"><span class="newPrice"></span> L.E</div>
+        </div>
+        <div class="rating">
+            <i class="star fas fa-star" data-value="1" ></i>
+            <i class="star fas fa-star" data-value="2" ></i>
+            <i class="star fas fa-star" data-value="3" ></i>
+            <i class="star fas fa-star" data-value="4" ></i>
+            <i class="star fas fa-star" data-value="5" ></i>
+        </div>
+        <button class="add-to-cart" onclick="addToCart(this)" data-image="images/prodact3.webp" >Add to Cart</button>
+    </div>
+
+    <div class="card_prodact">
+        <span class="discount">Discount 15%</span>
+        <i class="heart fas fa-heart" onclick="toggleHeart(this)"></i>
+        <img src="images/prodact4.webp" >
+        <div class="title">
+            Oraimo FreePods Neo ENC Earbuds, Black - OTW-330S (International Warranty)</div>
+        <div class="price-container">
+            <div class="old-price"><span class="oldPrice">900</span> L.E</div>
+            <div class="new-price"><span class="newPrice"></span> L.E</div>
+        </div>
+        <div class="rating">
+            <i class="star fas fa-star" data-value="1" ></i>
+            <i class="star fas fa-star" data-value="2" ></i>
+            <i class="star fas fa-star" data-value="3" ></i>
+            <i class="star fas fa-star" data-value="4" ></i>
+            <i class="star fas fa-star-half-alt" data-value="5" ></i>
+
+        </div>
+        <button class="add-to-cart" onclick="addToCart(this)" data-image="images/prodact4.webp" >Add to Cart</button>
+    </div>
+
+    <div class="card_prodact">
+        <span class="discount">Discount 5%</span>
+        <i class="heart fas fa-heart" onclick="toggleHeart(this)"></i>
+        <img src="images/prodact5.webp" >
+        <div class="title">Xiaomi Scooter 4 Ultra Electric Scooter, 120 kg weight - Black and Gray </div>
+        <div class="price-container">
+            <div class="old-price"><span class="oldPrice">9999</span> L.E</div>
+            <div class="new-price"><span class="newPrice"></span> L.E</div>
+        </div>
+        <div class="rating">
+            <i class="star fas fa-star" data-value="1" ></i>
+            <i class="star fas fa-star" data-value="2" ></i>
+            <i class="star fas fa-star" data-value="3" ></i>
+            <i class="star fas fa-star-half-alt" data-value="4" ></i>
+
+        </div>
+        <button class="add-to-cart" onclick="addToCart(this)" data-image="images/prodact5.webp" >Add to Cart</button>
+    </div>
+
+    <div class="card_prodact">
+        <span class="discount">Discount 3%</span>
+        <i class="heart fas fa-heart" onclick="toggleHeart(this)"></i>
+        <img src="images/prodact9.webp" >
+        <div class="title">
+            LG 65-inch Smart TV AI UT80 LED, 4K UHD resolution, built-in receiver</div>
+        <div class="price-container">
+            <div class="old-price"><span class="oldPrice">23499</span> L.E</div>
+            <div class="new-price"><span class="newPrice"></span> L.E</div>
+        </div>
+        <div class="rating">
+            <i class="star fas fa-star" data-value="1" ></i>
+            <i class="star fas fa-star" data-value="2" ></i>
+            <i class="star fas fa-star" data-value="3" ></i>
+            <i class="star fas fa-star-half-alt" data-value="4" ></i>
+        </div>
+        <button class="add-to-cart" onclick="addToCart(this)" data-image="images/prodact9.webp" >Add to Cart</button>
+    </div>
+
+    <div class="card_prodact">
+        <span class="discount">Discount 6%</span>
+        <i class="heart fas fa-heart" onclick="toggleHeart(this)"></i>
+        <img src="images/prodact8.webp" >
+        <div class="title">Microsoft Surface Laptop Go, Intel Core i5-1035G1 processor, 12.4-inch touchscreen display</div>
+        <div class="price-container">
+            <div class="old-price"><span class="oldPrice">27900</span> L.E</div>
+            <div class="new-price"><span class="newPrice"></span> L.E</div>
+        </div>
+        <div class="rating">
+            <i class="star fas fa-star" data-value="1" ></i>
+            <i class="star fas fa-star" data-value="2" ></i>
+            <i class="star fas fa-star" data-value="3" ></i>
+            <i class="star fas fa-star" data-value="4" ></i>
+            <i class="star fas fa-star" data-value="5" ></i>
+        </div>
+        <button class="add-to-cart" onclick="addToCart(this)" data-image="images/prodact8.webp" >Add to Cart</button>
+    </div>
+
+    <div class="card_prodact">
+        <span class="discount">Discount 3%</span>
+        <i class="heart fas fa-heart" onclick="toggleHeart(this)"></i>
+        <img src="images/prodact7.webp" >
+        <div class="title">Xiaomi Redmi Note 13 Dual SIM, 256 GB, 8 GB RAM, 4G LTE (International Warranty)</div>
+        <div class="price-container">
+            <div class="old-price"><span class="oldPrice">10211</span> L.E</div>
+            <div class="new-price"><span class="newPrice"></span> L.E</div>
+        </div>
+        <div class="rating">
+            <i class="star fas fa-star" data-value="1" ></i>
+            <i class="star fas fa-star" data-value="2" ></i>
+            <i class="star fas fa-star" data-value="3" ></i>
+            <i class="star fas fa-star" data-value="4" ></i>
+            <i class="star fas fa-star-half-alt" data-value="5" ></i>
+        </div>
+        <button class="add-to-cart" onclick="addToCart(this)" data-image="images/prodact7.webp" >Add to Cart</button>
+    </div>
+
+    <div class="card_prodact">
+        <span class="discount">Discount 9%</span>
+        <i class="heart fas fa-heart" onclick="toggleHeart(this)"></i>
+        <img src="images/prodact6.webp" >
+        <div class="title">LG Smart Top Load Fully Automatic Washing Machine with Inverter Technology, 11 Kg</div>
+        <div class="price-container">
+            <div class="old-price"><span class="oldPrice">13399</span> L.E</div>
+            <div class="new-price"><span class="newPrice"></span> L.E</div>
+        </div>
+        <div class="rating">
+            <i class="star fas fa-star" data-value="1" ></i>
+            <i class="star fas fa-star" data-value="2" ></i>
+            <i class="star fas fa-star" data-value="3" ></i>
+        </div>
+        <button class="add-to-cart" onclick="addToCart(this)" data-image="images/prodact6.webp" >Add to Cart</button>
+    </div>
+   </section>
+ 
+   <a href="" class="offers_page">
+    <button type="submit" class="custom-button">
+        Explore the offers
+        <i class="fa-solid fa-arrow-right custom-icon"></i>
+      </button>
+   </a>
+   <div class="container-fluid"> 
+     <div class="row justify-content-center">
+         <div class="col-12 col-lg-11"> 
+            <div class="about">
+                <h2>About Roven</h2>
+                <div class="row align-items-center">
+                    <div class="col-12 col-md-6">
+                        <p>Elevate your corporate experience with Roven. Simplify installments with one credit limit approval of up to 500,000LE. Unlock exclusive benefits, including seamless maintenance requests and daily offers. Apply now for the ultimate Elite experience.</p>
+                    </div>
+                    <div class="col-12 col-md-6">
+                        <h1>ROVEN</h1>
+                    </div>
+                </div>
+            </div>
+         </div>
+      </div>
+   </div>
+
+   <div id="slide2" class="carousel slide container" data-ride="carousel" data-pause="hover" data-interval="2000" >
+     <ol class="carousel-indicators">
+        <li data-target="#slide2" data-slide-to="0" class="active" ></li>
+        <li data-target="#slide2" data-slide-to="1"></li>
+     </ol>
+     <div class="carousel-inner">
+        <div class="carousel-item active">
+            <div class="offers_image">
+                <img src="images/offers_image.webp" alt="" >
+            </div>
+        </div>
+        <div class="carousel-item">
+            <div class="offers_image">
+                <img src="images/offers_image2.webp" alt="">
+            </div>        
+        </div>
+     </div>
+   </div>
+ 
+   <div id="slide3" class="carousel slide container" data-ride="carousel" data-pause="hover" data-interval="2000" >
+    <ol class="carousel-indicators">
+       <li data-target="#slide3" data-slide-to="0" class="active" ></li>
+       <li data-target="#slide3" data-slide-to="1"></li>
+    </ol>
+    <div class="carousel-inner">
+       <div class="carousel-item active">
+           <div class="offers_image">
+               <img src="images/offer_small_image.webp" alt="" >
+           </div>
+       </div>
+       <div class="carousel-item">
+           <div class="offers_image">
+               <img src="images/offer_small_image2.webp" alt="">
+           </div>        
+       </div>
+    </div>
+  </div>
+  <p class="offers">Best Offers</p>
+  <div class="offers_prodacts" >
+    <div class="card_prodact">
+        <span class="Best_Offers">Best Offers</span>
+        <i class="heart fas fa-heart" onclick="toggleHeart(this)"></i>
+        <img src="images/Bestseller1.webp">
+        <div class="title">Haier 43 Inch K80 FHD Smart LED Frameless TV - H43K80EF</div>
+        <div class="price-container">
+            <div class="new-price"><span class="newPrice">10,199</span> L.E</div>
+        </div>
+        <div class="rating">
+            <i class="star fas fa-star" data-value="1" ></i>
+            <i class="star fas fa-star" data-value="2" ></i>
+            <i class="star fas fa-star" data-value="3" ></i>
+            <i class="star fas fa-star" data-value="4" ></i>
+            <i class="star fas fa-star-half-alt" data-value="5" ></i>
+        </div>
+        <button class="add-to-cart" onclick="addToCart(this)" data-image="images/Bestseller1.webp" >Add to Cart</button>
+    </div>
+
+    <div class="card_prodact">
+        <span class="Best_Offers">Best Offers</span>
+        <i class="heart fas fa-heart" onclick="toggleHeart(this)"></i>
+        <img src="images/Bestseller2.webp">
+        <div class="title">OPPO Reno 12F Dual SIM, 256GB, 8GB RAM, 4G LTE </div>
+        <div class="price-container">
+            <div class="new-price"><span class="newPrice">12,590</span> L.E</div>
+        </div>
+        <div class="rating">
+            <i class="star fas fa-star" data-value="1" ></i>
+            <i class="star fas fa-star" data-value="2" ></i>
+            <i class="star fas fa-star" data-value="3" ></i>
+            <i class="star fas fa-star" data-value="4" ></i>
+            <i class="star fas fa-star-half-alt" data-value="5" ></i>
+        </div>
+        <button class="add-to-cart" onclick="addToCart(this)" data-image="images/Bestseller2.webp" >Add to Cart</button>
+    </div>
+
+    <div class="card_prodact">
+        <span class="Best_Offers">Best Offers</span>
+        <i class="heart fas fa-heart" onclick="toggleHeart(this)"></i>
+        <img src="images/Bestseller3.webp">
+        <div class="title">Ridingtone AirPods Pro 2nd Gen In-Ear Earbuds </div>
+        <div class="price-container">
+            <div class="new-price"><span class="newPrice">855</span> L.E</div>
+        </div>
+        <div class="rating">
+            <i class="star fas fa-star" data-value="1" ></i>
+            <i class="star fas fa-star" data-value="2" ></i>
+            <i class="star fas fa-star" data-value="3" ></i>
+            <i class="star fas fa-star" data-value="4" ></i>
+            <i class="star fas fa-star-half-alt" data-value="5" ></i>
+        </div>
+        <button class="add-to-cart" onclick="addToCart(this)" data-image="images/Bestseller3.webp" >Add to Cart</button>
+    </div>
+
+    <div class="card_prodact">
+        <span class="Best_Offers">Best Offers</span>
+        <i class="heart fas fa-heart" onclick="toggleHeart(this)"></i>
+        <img src="images/Bestseller4.webp">
+        <div class="title">Haier 32 Inch HD LED TV with Built In Receiver</div>
+        <div class="price-container">
+            <div class="new-price"><span class="newPrice">8,950</span> L.E</div>
+        </div>
+        <div class="rating">
+            <i class="star fas fa-star" data-value="1" ></i>
+            <i class="star fas fa-star" data-value="2" ></i>
+            <i class="star fas fa-star" data-value="3" ></i>
+            <i class="star fas fa-star" data-value="4" ></i>
+            <i class="star fas fa-star-half-alt" data-value="5" ></i>
+        </div>
+        <button class="add-to-cart" onclick="addToCart(this)" data-image="images/Bestseller4.webp" >Add to Cart</button>
+    </div>
+
+    <div class="card_prodact">
+        <span class="Best_Offers">Best Offers</span>
+        <i class="heart fas fa-heart" onclick="toggleHeart(this)"></i>
+        <img src="images/Bestseller5.webp">
+        <div class="title">Samsung Galaxy A05s Dual SIM, 64GB, 4GB RAM</div>
+        <div class="price-container">
+            <div class="new-price"><span class="newPrice">5,999</span> L.E</div>
+        </div>
+        <div class="rating">
+            <i class="star fas fa-star" data-value="1" ></i>
+            <i class="star fas fa-star" data-value="2" ></i>
+            <i class="star fas fa-star" data-value="3" ></i>
+            <i class="star fas fa-star" data-value="4" ></i>
+            <i class="star fas fa-star-half-alt" data-value="5" ></i>
+        </div>
+        <button class="add-to-cart" onclick="addToCart(this)" data-image="images/Bestseller5.webp" >Add to Cart</button>
+    </div>
+
+    <div class="card_prodact">
+        <span class="Best_Offers">Best Offers</span>
+        <i class="heart fas fa-heart" onclick="toggleHeart(this)"></i>
+        <img src="images/Bestseller6.webp">
+        <div class="title">Apple SE Smart Watch, 44mm, Blue - MR9W12</div>
+        <div class="price-container">
+            <div class="new-price"><span class="newPrice">9,999</span> L.E</div>
+        </div>
+        <div class="rating">
+            <i class="star fas fa-star" data-value="1" ></i>
+            <i class="star fas fa-star" data-value="2" ></i>
+            <i class="star fas fa-star" data-value="3" ></i>
+            <i class="star fas fa-star" data-value="4" ></i>
+            <i class="star fas fa-star-half-alt" data-value="5" ></i>
+        </div>
+        <button class="add-to-cart" onclick="addToCart(this)" data-image="images/Bestseller6.webp" >Add to Cart</button>
+    </div>
+  </div>
+   <a href="" class="offers_page">
+      <button type="submit" class="custom-button">
+        Explore the offers
+        <i class="fa-solid fa-arrow-right custom-icon"></i>
+      </button>
+   </a>
+
+
+   <footer class="footer">
+    <div class="footer_container">
+        <div class="footer_top">
+            <div>
+                <h6 class="footer_tittle">About ROVEN</h6>
+                <ul class="footer_list">
+                    <li class="footer_list_item">
+                        <a href="">who we are</a>
+                    </li>
+                    <li class="footer_list_item">
+                        <a href="">Services or Products</a>
+                    </li>
+                    <li class="footer_list_item">
+                        <a href="">Contact Us</a>
+                    </li>
+                    <li class="footer_list_item">
+                        <a href="">FAQ</a>
+                    </li>
+                    <li class="footer_list_item">
+                        <a href="">ROVEN locator</a>
+                    </li>
+                </ul>             
+            </div>
+            <div>
+                <h6 class="footer_tittle">Contact Information</h6>
+                <ul class="footer_list">
+                    <li class="footer_list_item">
+                        <a href="">Address</a>
+                    </li>
+                    <li class="footer_list_item">
+                        <a href="">Phone</a>
+                    </li>
+                    <li class="footer_list_item">
+                        <a href="">Email</a>
+                    </li>
+                    <li class="footer_list_item">
+                        <a href="">Working Hours</a>
+                    </li>
+                </ul>             
+            </div>
+
+            <div>
+                <h6 class="footer_tittle">Site Policies</h6>
+                <ul class="footer_list">
+                    <li class="footer_list_item">
+                        <a href="">Privacy Policy</a>
+                    </li>
+                    <li class="footer_list_item">
+                        <a href="">Terms of Use</a>
+                    </li>
+                    <li class="footer_list_item">
+                        <a href="">Return & Replacement Policy</a>
+                    </li>
+                    <li class="footer_list_item">
+                        <a href="">copy rights</a>
+                    </li>
+                </ul>             
+            </div>
+
+            <div>
+                <h6 class="footer_tittle">More</h6>
+                <ul class="footer_list">
+                    <li class="footer_list_item">
+                        <a href="">Installment offers</a>
+                    </li>
+                    <li class="footer_list_item">
+                        <a href="">Terms & Conditions</a>
+                    </li>
+                    <li class="footer_list_item">
+                        <a href="">Privacy Policy</a>
+                    </li>
+                    <li class="footer_list_item">
+                        <a href="">Taksety Terms & Conditions</a>
+                    </li>
+                </ul>             
+            </div>
+        </div>
+        <hr class="footer_divider">
+        <div class="footer_bottom">
+            <span class="copy_rights">© 2025 - ROVEN | All Rights Reserved</span>
+            <ul class="footer-list">
+                <li class="footer-list-item">
+                    <a href="#" class="footer-list-link">
+                        <i class="ri-facebook-line"></i>
+                    </a>
+                </li>
+                <li class="footer-list-item">
+                    <a href="#" class="footer-list-link">
+                        <i class="ri-instagram-line"></i>
+                    </a>
+                </li>
+                <li class="footer-list-item">
+                    <a href="#" class="footer-list-link">
+                        <i class="ri-twitter-line"></i>
+                    </a>
+                </li>
+                <li class="footer-list-item">
+                    <a href="#" class="footer-list-link">
+                        <i class="ri-linkedin-line"></i>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+   </footer>
+
+  
+    <script src="main.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/jquery-3.7.1.js"></script>
+    <script src="js/bootstrap.js"></script>
+</body>
+</html>

@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cart</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="master.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<header>
+    <nav class="navbar">
+        <span class="brand">ROVEN</span>
+        <div class="account"><li><a class="log" href="Login.html" target="_blank">account</a><i class="fa-solid fa-user"></i></li></div>
+        <div class="toggle_btn">
+            <i class="fa-solid fa-bars"></i>
+        </div>
+        <form class="d-flex" role="search">
+            <div class="dropdown">
+                <button class="btn btn-secondary dropdown-toggle" id="categoryDropdown" type="button" data-toggle="dropdown" aria-expanded="false" style="background-color: #055C9D;">
+                </button>
+                <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">Mobile & Tablet</a></li>
+                    <li><a class="dropdown-item" href="#">TV</a></li>
+                    <li><a class="dropdown-item" href="#">Small appliances</a></li>
+                    <li><a class="dropdown-item" href="#">Large devices</a></li>
+                    <li><a class="dropdown-item" href="#">Kitchen appliances</a></li>
+                    <li><a class="dropdown-item" href="#">Health & Beauty</a></li>
+                    <li><a class="dropdown-item" href="#">Home Supplies</a></li>
+                    <li><a class="dropdown-item" href="#">Supermarket</a></li>
+                </ul>
+            </div>
+            <input class="form-control me-2" type="search" placeholder="Find the product" aria-label="Search">
+            <button class="btn"><i class="fa-solid fa-magnifying-glass"></i></button>
+        </form>
+        <ul class="links">
+            <li><a class="car" href="CAR.html" target="_blank">Cart</a><i class="fa-solid fa-cart-shopping"></i></li>
+            <li><a class="car" href="#" target="_blank">The favorite</a><i class="fa-solid fa-heart"></i></li>
+        </ul>
+        <div class="dropdown-btn dropdown_menu">
+            <li><a class="log" href="Login.html" target="_blank">account</a><i class="fa-solid fa-user"></i></li>
+            <li><a class="car" href="CAR.html" target="_blank">Cart</a><i class="fa-solid fa-cart-shopping"></i></li>
+            <li><a class="car" href="#" target="_blank">The favorite</a><i class="fa-solid fa-heart"></i></li>
+        </div>
+        </div>
+    </nav>
+</header>
+
+<body style="background-color: aliceblue;">
+<section class="cart-container">
+    <div class="cart-items" id="cart-items"></div>
+</section>
+
+<div id="total-price"></div>
+<div id="checkout-section">
+    <button id="checkout">إتمام الشراء</button>
+    <button id="empty-cart">تفريغ العربة</button>
+</div>
+
+<p class="offers">Our Top Offers</p>
+
+
+<section class="offers_prodacts" >
+    <div class="card_prodact">
+        <span class="discount">Discount 17%</span>
+        <i class="heart fas fa-heart" onclick="toggleHeart(this)"></i>
+        <img src="images/prodact1.webp">
+        <div class="title">Philips Essential XL Digital Air Fryer, 6.2 Liters, 2000 Watts, Black - HD9280/91</div>
+        <div class="price-container">
+            <div class="old-price"><span class="oldPrice">5799</span> L.E</div>
+            <div class="new-price"><span class="newPrice"></span> L.E</div>
+        </div>
+        <div class="rating">
+            <i class="star fas fa-star" data-value="1" ></i>
+            <i class="star fas fa-star" data-value="2" ></i>
+            <i class="star fas fa-star" data-value="3" ></i>
+            <i class="star fas fa-star" data-value="4" ></i>
+            <i class="star fas fa-star-half-alt" data-value="5" ></i>
+        </div>
+        <button class="add-to-cart" onclick="addToCart(this)" data-image="images/prodact1.webp">إضافة إلى العربة</button>
+    </div>
+    <div class="card_prodact">
+        <span class="discount">Discount 7%</span>
+        <i class="heart fas fa-heart" onclick="toggleHeart(this)"></i>
+        <img src="images/prodact2.webp" >
+        <div class="title">Samsung Galaxy A16, Dual SIM, 256GB storage, 8GB RAM, 4G network</div>
+        <div class="price-container">
+            <div class="old-price"><span class="oldPrice">9499</span> L.E</div>
+            <div class="new-price"><span class="newPrice"></span> L.E</div>
+        </div>
+        <div class="rating">
+            <i class="star fas fa-star" data-value="1" ></i>
+            <i class="star fas fa-star" data-value="2" ></i>
+            <i class="star fas fa-star" data-value="3" ></i>
+            <i class="star fas fa-star" data-value="4" ></i>
+        </div>
+        <button class="add-to-cart" onclick="addToCart(this)"  data-image="images/prodact2.webp" >Add to Cart</button>
+    </div>
+
+    <div class="card_prodact">
+        <span class="discount">Discount 10%</span>
+        <i class="heart fas fa-heart" onclick="toggleHeart(this)"></i>
+        <img src="images/prodact3.webp" >
+        <div class="title">Oraimo Tempo W2 Smartwatch, 1.28-inch display, Black - OSW-20</div>
+        <div class="price-container">
+            <div class="old-price"><span class="oldPrice">950</span> L.E</div>
+            <div class="new-price"><span class="newPrice"></span> L.E</div>
+        </div>
+        <div class="rating">
+            <i class="star fas fa-star" data-value="1" ></i>
+            <i class="star fas fa-star" data-value="2" ></i>
+            <i class="star fas fa-star" data-value="3" ></i>
+            <i class="star fas fa-star" data-value="4" ></i>
+            <i class="star fas fa-star" data-value="5" ></i>
+        </div>
+        <button class="add-to-cart" onclick="addToCart(this)" data-image="images/prodact3.webp" >Add to Cart</button>
+    </div>
+
+    <div class="card_prodact">
+        <span class="discount">Discount 15%</span>
+        <i class="heart fas fa-heart" onclick="toggleHeart(this)"></i>
+        <img src="images/prodact4.webp" >
+        <div class="title">
+            Oraimo FreePods Neo ENC Earbuds, Black - OTW-330S (International Warranty)</div>
+        <div class="price-container">
+            <div class="old-price"><span class="oldPrice">900</span> L.E</div>
+            <div class="new-price"><span class="newPrice"></span> L.E</div>
+        </div>
+        <div class="rating">
+            <i class="star fas fa-star" data-value="1" ></i>
+            <i class="star fas fa-star" data-value="2" ></i>
+            <i class="star fas fa-star" data-value="3" ></i>
+            <i class="star fas fa-star" data-value="4" ></i>
+            <i class="star fas fa-star-half-alt" data-value="5" ></i>
+
+        </div>
+        <button class="add-to-cart" onclick="addToCart(this)" data-image="images/prodact4.webp" >Add to Cart</button>
+    </div>
+
+    <div class="card_prodact">
+        <span class="discount">Discount 5%</span>
+        <i class="heart fas fa-heart" onclick="toggleHeart(this)"></i>
+        <img src="images/prodact5.webp" >
+        <div class="title">Xiaomi Scooter 4 Ultra Electric Scooter, 120 kg weight - Black and Gray </div>
+        <div class="price-container">
+            <div class="old-price"><span class="oldPrice">9999</span> L.E</div>
+            <div class="new-price"><span class="newPrice"></span> L.E</div>
+        </div>
+        <div class="rating">
+            <i class="star fas fa-star" data-value="1" ></i>
+            <i class="star fas fa-star" data-value="2" ></i>
+            <i class="star fas fa-star" data-value="3" ></i>
+            <i class="star fas fa-star-half-alt" data-value="4" ></i>
+
+        </div>
+        <button class="add-to-cart" onclick="addToCart(this)" data-image="images/prodact5.webp" >Add to Cart</button>
+    </div>
+
+    <div class="card_prodact">
+        <span class="discount">Discount 3%</span>
+        <i class="heart fas fa-heart" onclick="toggleHeart(this)"></i>
+        <img src="images/prodact9.webp" >
+        <div class="title">
+            LG 65-inch Smart TV AI UT80 LED, 4K UHD resolution, built-in receiver</div>
+        <div class="price-container">
+            <div class="old-price"><span class="oldPrice">23499</span> L.E</div>
+            <div class="new-price"><span class="newPrice"></span> L.E</div>
+        </div>
+        <div class="rating">
+            <i class="star fas fa-star" data-value="1" ></i>
+            <i class="star fas fa-star" data-value="2" ></i>
+            <i class="star fas fa-star" data-value="3" ></i>
+            <i class="star fas fa-star-half-alt" data-value="4" ></i>
+        </div>
+        <button class="add-to-cart" onclick="addToCart(this)" data-image="images/prodact9.webp" >Add to Cart</button>
+    </div>
+
+    <div class="card_prodact">
+        <span class="discount">Discount 6%</span>
+        <i class="heart fas fa-heart" onclick="toggleHeart(this)"></i>
+        <img src="images/prodact8.webp" >
+        <div class="title">Microsoft Surface Laptop Go, Intel Core i5-1035G1 processor, 12.4-inch touchscreen display</div>
+        <div class="price-container">
+            <div class="old-price"><span class="oldPrice">27900</span> L.E</div>
+            <div class="new-price"><span class="newPrice"></span> L.E</div>
+        </div>
+        <div class="rating">
+            <i class="star fas fa-star" data-value="1" ></i>
+            <i class="star fas fa-star" data-value="2" ></i>
+            <i class="star fas fa-star" data-value="3" ></i>
+            <i class="star fas fa-star" data-value="4" ></i>
+            <i class="star fas fa-star" data-value="5" ></i>
+        </div>
+        <button class="add-to-cart" onclick="addToCart(this)" data-image="images/prodact8.webp" >Add to Cart</button>
+    </div>
+
+    <div class="card_prodact">
+        <span class="discount">Discount 3%</span>
+        <i class="heart fas fa-heart" onclick="toggleHeart(this)"></i>
+        <img src="images/prodact7.webp" >
+        <div class="title">Xiaomi Redmi Note 13 Dual SIM, 256 GB, 8 GB RAM, 4G LTE (International Warranty)</div>
+        <div class="price-container">
+            <div class="old-price"><span class="oldPrice">10211</span> L.E</div>
+            <div class="new-price"><span class="newPrice"></span> L.E</div>
+        </div>
+        <div class="rating">
+            <i class="star fas fa-star" data-value="1" ></i>
+            <i class="star fas fa-star" data-value="2" ></i>
+            <i class="star fas fa-star" data-value="3" ></i>
+            <i class="star fas fa-star" data-value="4" ></i>
+            <i class="star fas fa-star-half-alt" data-value="5" ></i>
+        </div>
+        <button class="add-to-cart" onclick="addToCart(this)" data-image="images/prodact7.webp" >Add to Cart</button>
+    </div>
+
+    <div class="card_prodact">
+        <span class="discount">Discount 9%</span>
+        <i class="heart fas fa-heart" onclick="toggleHeart(this)"></i>
+        <img src="images/prodact6.webp" >
+        <div class="title">LG Smart Top Load Fully Automatic Washing Machine with Inverter Technology, 11 Kg</div>
+        <div class="price-container">
+            <div class="old-price"><span class="oldPrice">13399</span> L.E</div>
+            <div class="new-price"><span class="newPrice"></span> L.E</div>
+        </div>
+        <div class="rating">
+            <i class="star fas fa-star" data-value="1" ></i>
+            <i class="star fas fa-star" data-value="2" ></i>
+            <i class="star fas fa-star" data-value="3" ></i>
+        </div>
+        <button class="add-to-cart" onclick="addToCart(this)" data-image="images/prodact6.webp" >Add to Cart</button>
+    </div>
+   </section>
+
+   <footer class="footer">
+    <div class="footer_container">
+        <div class="footer_top">
+            <div>
+                <h6 class="footer_tittle">About ROVEN</h6>
+                <ul class="footer_list">
+                    <li class="footer_list_item">
+                        <a href="">who we are</a>
+                    </li>
+                    <li class="footer_list_item">
+                        <a href="">Services or Products</a>
+                    </li>
+                    <li class="footer_list_item">
+                        <a href="">Contact Us</a>
+                    </li>
+                    <li class="footer_list_item">
+                        <a href="">FAQ</a>
+                    </li>
+                    <li class="footer_list_item">
+                        <a href="">ROVEN locator</a>
+                    </li>
+                </ul>             
+            </div>
+            <div>
+                <h6 class="footer_tittle">Contact Information</h6>
+                <ul class="footer_list">
+                    <li class="footer_list_item">
+                        <a href="">Address</a>
+                    </li>
+                    <li class="footer_list_item">
+                        <a href="">Phone</a>
+                    </li>
+                    <li class="footer_list_item">
+                        <a href="">Email</a>
+                    </li>
+                    <li class="footer_list_item">
+                        <a href="">Working Hours</a>
+                    </li>
+                </ul>             
+            </div>
+
+            <div>
+                <h6 class="footer_tittle">Site Policies</h6>
+                <ul class="footer_list">
+                    <li class="footer_list_item">
+                        <a href="">Privacy Policy</a>
+                    </li>
+                    <li class="footer_list_item">
+                        <a href="">Terms of Use</a>
+                    </li>
+                    <li class="footer_list_item">
+                        <a href="">Return & Replacement Policy</a>
+                    </li>
+                    <li class="footer_list_item">
+                        <a href="">copy rights</a>
+                    </li>
+                </ul>             
+            </div>
+
+            <div>
+                <h6 class="footer_tittle">More</h6>
+                <ul class="footer_list">
+                    <li class="footer_list_item">
+                        <a href="">Installment offers</a>
+                    </li>
+                    <li class="footer_list_item">
+                        <a href="">Terms & Conditions</a>
+                    </li>
+                    <li class="footer_list_item">
+                        <a href="">Privacy Policy</a>
+                    </li>
+                    <li class="footer_list_item">
+                        <a href="">Taksety Terms & Conditions</a>
+                    </li>
+                </ul>             
+            </div>
+        </div>
+        <hr class="footer_divider">
+        <div class="footer_bottom">
+            <span class="copy_rights">© 2025 - ROVEN | All Rights Reserved</span>
+            <ul class="footer-list">
+                <li class="footer-list-item">
+                    <a href="#" class="footer-list-link">
+                        <i class="ri-facebook-circle-line"></i>
+                    </a>
+                </li>
+                <li class="footer-list-item">
+                    <a href="#" class="footer-list-link">
+                        <i class="ri-instagram-line"></i>
+                    </a>
+                </li>
+                <li class="footer-list-item">
+                    <a href="#" class="footer-list-link">
+                        <i class="ri-twitter-line"></i>
+                    </a>
+                </li>
+                <li class="footer-list-item">
+                    <a href="#" class="footer-list-link">
+                        <i class="ri-linkedin-line"></i>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+   </footer>
+
+
+<script src="main.js"></script>
+</body>
+</html>
